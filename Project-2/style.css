@@ -1,0 +1,228 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f3f4f8;
+    transition: 0.3s;
+}
+body.dark { background: #121212; color: #e5e5e5; }
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.12);
+}
+body.dark .container { background: #1e1e1e; }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+   border-bottom: 1px solid #e0d7f8; 
+    padding-bottom: 2px;
+}
+
+body.dark .header-line {
+    border-bottom: 1px solid #4b3a69; 
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.nav{
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
+.nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    color: #6a0dad;
+    transition: 0.2s;
+}
+.nav a:hover {
+    color: #a855f7;
+    transform: scale(1.1);
+}
+body.dark .nav a { color: #bb86fc; }
+
+.resume-btn {
+    margin-left: 555px;
+    text-decoration: none;
+    margin-top: -140px;
+    padding: 8px 16px;
+    background: linear-gradient(45deg, #6a0dad, #9d4edd);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.resume-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(106,0,173,0.4);
+}
+.dark-toggle {
+    position: relative;
+    left: -20px;
+    margin-top: -255px;
+}
+
+h2 { color: #6a0dad; }
+body.dark h2 { color: #bb86fc; }
+
+#skills {
+    margin-top: 30px;
+}
+
+.skill-row {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+.skill-left {
+    width: 35%;
+    background: #9c49d8; 
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.skill-right {
+    width: 65%;
+    background: #f3e8ff; 
+    padding: 12px;
+    font-size: 15px;
+    color: #333;
+}
+
+body.dark .skill-left {
+    background: #4e1678;  
+}
+
+body.dark .skill-right {
+    background: #2d2238; 
+    color: #e2d9ff; 
+}
+
+.skill-row:hover .skill-left,
+.skill-row:hover .skill-right {
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+.project {
+    background: #f5f0ff;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+.edu {
+    background: #f5f0ff;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+body.dark .edu { background: #2a2240; 
+}
+.project:hover {
+    transform: scale(1.02);
+}
+body.dark .project { background: #2a2240; 
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-center {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.contact-icon {
+    background: #f3e8ff; 
+    padding: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+    text-decoration: none !important;
+}
+
+.contact-icon i {
+    font-size: 28px;
+    color: #6a0dad;
+    transition: 0.3s;
+}
+
+.contact-icon:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(106,0,173,0.3);
+}
+
+.contact-icon.github:hover i {
+    color: #000;
+}
+.contact-icon.linkedin:hover i {
+    color: #0077b5;
+}
+.contact-icon.gmail:hover i {
+    color: #d93025;
+}
+
+body.dark .contact-icon {
+    background: #2d2238;
+}
+
+body.dark .contact-icon i {
+    color: #bb86fc;
+}
+
+body.dark .contact-icon:hover {
+    box-shadow: 0 4px 12px rgba(187,134,252,0.4);
+}
+.contact-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+body.dark .contact-text {
+    color: #e5d9ff;
+}
+ 
+.dark-toggle {
+    cursor: pointer;
+    font-size: 28px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    padding: 70px;
+    opacity: 0.7;
+}
+.tech {
+    margin-left: 0px;
+    margin-bottom: -3px;
+}
